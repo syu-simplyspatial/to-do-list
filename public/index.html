@@ -20,8 +20,18 @@
       <button type="submit">Add</button>
     </form>
 
+    <div id="filter-bar">
+      <div id="filter-buttons">
+        <button type="button" class="filter-btn active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="active">Active</button>
+        <button type="button" class="filter-btn" data-filter="done">Completed</button>
+      </div>
+      <button type="button" id="clear-completed-btn">Clear completed</button>
+    </div>
+
     <ul id="task-list"></ul>
     <p id="empty-state" hidden>No tasks yet — add one above.</p>
+    <p id="task-count"></p>
   </main>
 
   <script src="app.js"></script>
